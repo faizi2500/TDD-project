@@ -32,15 +32,15 @@ describe Solver do
         end 
 
         it "should return 'buzz' if divisible by 5 only " do 
-            expect(@solver.reverse()).to eq 'faizan'
+            expect(@solver.fizzbuzz(10)).to eq 'buzz'
         end 
 
         it "should return 'fizzbuzz' if divisible by 3 and 5 both " do 
-            expect(@solver.reverse("faizan")).to eq 'faizan'
+            expect(@solver.fizzbuzz(15)).to eq 'fizzbuzz'
         end 
 
         it "Show the number as string if divisble by none " do 
-            expect(@solver.reverse(10)).to eq '10'
+            expect(@solver.fizzbuzz(8)).to eq '8'
         end 
     end
 end
