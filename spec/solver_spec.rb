@@ -1,11 +1,11 @@
-require 
+require_relative '../solver'
 
 describe Solver do 
    before :each do
       @solver = Solver.new
    end
 
-    describe Factorial do
+    # describe Factorial do
         it "should test the factorial method" do 
             expect(@solver.factorial(4)).to eq 24
         end 
@@ -15,5 +15,5 @@ describe Solver do
         it "should raise an exception if a negative integer is given " do 
             expect(@solver.factorial(-4)).to eq 'Oh, there is an error. Please use positive number'
         end 
-    end
+    # end
 end
