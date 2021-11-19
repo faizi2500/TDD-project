@@ -5,7 +5,6 @@ describe Solver do
       @solver = Solver.new
    end
 
-    # describe Factorial do
         it "should test the factorial method" do 
             expect(@solver.factorial(4)).to eq 24
         end 
@@ -15,5 +14,9 @@ describe Solver do
         it "should raise an exception if a negative integer is given " do 
             expect(@solver.factorial(-4)).to eq 'Oh, there is an error. Please use positive number'
         end 
-    # end
+
+
+        it "should return the string word reversed " do 
+            expect(@solver.reverse("faizan")).to eq 'naziaf'
+        end 
 end
